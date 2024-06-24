@@ -300,3 +300,20 @@ body.dark-mode {
     margin: 0;
     text-align: right;
 }
+.list-unstyled li{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 30px;
+}
+.nav a{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+
+
