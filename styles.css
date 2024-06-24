@@ -1,0 +1,302 @@
+/* Light mode styles (default) */
+body {
+    background-color: white;
+    color: black;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+/* Optional: Styling for the switch itself */
+.form-check-input {
+    cursor: pointer;
+}
+
+/* navbar */
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    border-radius: 17px;
+    border-radius: 0.600625rem;
+    border-style: solid;
+    border-color: #a2a3a4;
+    border-width: 0.069375rem;
+    width: 18.9225rem;    height: 1.895rem;
+    margin-left: 13%;
+}
+
+.search-bar input {
+    border: none;
+    background: none;
+    color: white;
+    outline: none;
+    margin-left: 10px;
+}
+
+.icon img {
+    width: 50px;
+    height: 50px;
+}
+.icon i{
+    font-size: 173%;
+}
+.new-button {
+    background-color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 15%;
+    font-family: "Inter-Medium", sans-serif;
+}
+
+.featured-nfts {
+    max-width: 1199px;
+    margin: 0 auto;
+    padding: 42px 21px;
+    text-align: center;
+}
+
+.featured-nfts h2 {
+    margin-bottom: 40px;
+    font-size: 2em;
+    color: #333;
+}
+
+.card {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background: #3f444e;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+    color: #f3ebeb;
+}
+
+.card-text {
+    margin: 0;
+    color: #b1aaaa;
+}
+
+.price {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #ff9900;
+}
+
+.price img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.metadata {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    font-size: 0.9em;
+    color: #aaa;
+}
+
+.metadata span {
+    display: flex;
+    align-items: center;
+}
+
+.metadata i {
+    margin-right: 5px;
+}
+
+.sidebar {
+    min-height: 100vh;
+    width: 27%;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo h2 {
+    font-size: 5%;
+    font-size: 151%;
+    padding-left: 5%;
+    padding-top: 4%;
+}
+
+.section1 {
+    display: flex;
+}
+
+.nav-link {
+    color: #fff;
+}
+
+.nav-link:hover {
+    color: #aaa;
+}
+
+.card {
+    border: none;
+}
+
+.card img {
+    border-radius: 5px;
+}
+
+.investment-chart {
+    background-color: #3a3a3c;
+    border-radius: 5px;
+}
+
+.list-group-item {
+    border: none;
+}
+
+.list-group-item+.list-group-item {
+    border-top: 1px solid #555;
+
+}
+
+.main1 {
+    width: 73%;
+}
+
+.sidebar {
+    transition: transform 0.3s ease;
+    z-index: 1;
+}
+
+.sidebar.active {
+    transform: translateX(0);
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        transform: translateX(-100%);
+    }
+}
+@media (max-width: 768px) {
+    .featured-nfts {
+        max-width: 1199px;
+        margin: 0 auto;
+        padding: 42px 21px;
+        text-align: center;
+        margin-left: -50%;
+    }
+}
+@media (max-width: 768px) {
+    .dashboard {
+        width: auto !important;
+        margin-left: -50%;
+    }
+} 
+.dashboard {
+    display: flex;
+    width: 100%;
+}
+
+.investments,
+.transactions {
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+}
+
+.investments .chart {
+    height: 200px;
+    background: linear-gradient(to top, #4a4a4a, #1e1e1e);
+    border-radius: 10px;
+    position: relative;
+}
+
+.chart .tooltip {
+    position: absolute;
+    background-color: #3a3a3a;
+    padding: 5px 10px;
+    border-radius: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+}
+
+.transactions .transaction {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #3a3a3a;
+}
+
+.transaction:last-child {
+    border-bottom: none;
+}
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 10px;
+}
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+.card .card-body {
+    padding: 10px;
+}
+
+.carousel-cell {
+    width: 25%;
+    min-width: 200px;
+}
+
+.crypto-row {
+    background-color: #3a3d46;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.crypto-icon img {
+    width: 40px;
+}
+
+.crypto-amount p {
+    margin: 0;
+}
+
+.usd-value {
+    font-size: 0.8em;
+    color: #a9a9a9;
+}
+
+.crypto-loss p {
+    margin: 0;
+    text-align: right;
+}
